@@ -38,5 +38,5 @@ And that's it! If redis goes down a new `ResqueBackup` entry will be added and i
 
 Check out the [LICENSE][license] file.
 
- [migration]: https://github.com/hoteltonight/resque-ar-failover/master/lib/generators/templates/migration.rb
- [license]: https://github.com/hoteltonight/resque-ar-failover/master/LICENSE
+ [migration]: https://github.com/hoteltonight/resque-ar-failover/blob/master/lib/generators/templates/migration.rb
+ [license]: https://github.com/hoteltonight/resque-ar-failover/blob/master/LICENSE
