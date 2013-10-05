@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Pablo Fernandez']
   s.email       = ['heelhook@littleq.net']
   s.homepage    = 'http://github.com/hoteltonight/resque-ar-failover'
-  s.summary     = 'Makes Resque tolerant to redis MIAs'
+  s.summary     = 'Resque plugin to fail over to ActiveRecord backend for Resque job storage, when Redis is unavailable.'
   s.has_rdoc    = false
 
   s.rubyforge_project = 'resque-ar-failover'
