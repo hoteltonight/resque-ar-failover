@@ -18,3 +18,16 @@ task :load_path do
     $LOAD_PATH.unshift(File.expand_path("../#{path}", __FILE__))
   end
 end
+
+task gem: :build
+task :build do
+  system "gem build resque-ar-failover.gemspec"
+end
+
+task release: :build do
+  version = Resque::Plugins::ArFailover::VERSION
+  system "git tag -a v#{version} -m 'Tagging #{version}'"
+  system "git push --tags"
+  system "gem push resque-ar-failover-#{version}.gem"
+  system "rm resque-ar-failover-#{version}.gem"
+end
